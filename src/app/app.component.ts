@@ -11,5 +11,5 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
 
 
- 
+  title = 'VnrAngApp2';
 }
