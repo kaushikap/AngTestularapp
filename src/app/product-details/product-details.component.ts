@@ -11,6 +11,7 @@ export class ProductDetailsComponent  {
 
   //to receive data from parent as input
   @Input() productObj:Product;
+  
 
   //create a custom event
   @Output() myEvent=new EventEmitter();

@@ -1,0 +1,20 @@
+li{
+    background-color: #d81b60;
+    
+}
+
+li a{
+    color:white;
+}
+
+
+active{
+    background-color: goldenrod;
+    
+}
+
+.active.nav-link{
+    background-color:white;
+    color:#d81b60;
+    box-shadow: 3px 3px 3px #d81b60;
+}

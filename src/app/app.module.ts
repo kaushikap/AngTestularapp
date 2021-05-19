@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,13 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { BikesComponent } from './bikes/bikes.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { TelevisionsComponent } from './televisions/televisions.component';
+
+
+import { UsersComponent } from './users/users.component'
 
 
 @NgModule({
@@ -25,12 +33,21 @@ import { ContactusComponent } from './contactus/contactus.component';
     LoginComponent,
     HomeComponent,
     ContactusComponent,
+    BikesComponent,
+    MobilesComponent,
+    PagenotfoundComponent,
+    TelevisionsComponent,
+    UsersComponent,
+    
    
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

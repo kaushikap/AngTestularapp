@@ -6,11 +6,13 @@
     font-weight: bold;
    
 }
-.footer{
-    margin-bottom: 0px;
-   position: static;
-}
+
 a:hover{
    background-color: rgb(75, 235, 208) ;
-
+   border-radius: 10px;
 }
+
+ 
+ nav li a:focus{
+     color:yellow;
+ }
