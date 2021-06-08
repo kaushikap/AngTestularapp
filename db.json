@@ -1,0 +1,144 @@
+{
+    "users":[
+        {
+            "id":"1" ,
+            "email":"abc@gmail.com" ,
+            "name": "Raghu",
+            "profilePic": "https://tse2.mm.bing.net/th?id=OIP.yj2FEJUGeiFdRKmBTOzsbAAAAA&pid=Api&P=0&w=300&h=300" ,
+            "address":{
+                "street":"Shamshabad",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Doctor" ,
+            "mobileno":  "7392046389"
+               
+        },
+        {
+            "id":"2" ,
+            "email":"def@gmail.com" ,
+            "name": "Kashyap",
+            "profilePic": "https://tse2.mm.bing.net/th?id=OIP.yj2FEJUGeiFdRKmBTOzsbAAAAA&pid=Api&P=0&w=300&h=300" ,
+            "address":{
+                "street":"Lingampally",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Teacher" ,
+            "mobileno":  "982048789"
+               
+        },
+        {
+            "id":"3" ,
+            "email":"hij@gmail.com" ,
+            "name": "Prathima",
+            "profilePic": "https://tse3.mm.bing.net/th?id=OIP.gxn_fMRYjgGPp7I9lh81FgHaGS&pid=Api&P=0&w=180&h=154" ,
+            "address":{
+                "street":"Secundarabad",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Buinesss" ,
+            "mobileno":  "7567046389"
+               
+        },
+        {
+            "id":"4" ,
+            "email":"klm@gmail.com" ,
+            "name": "Kaushika",
+            "profilePic": "https://tse3.mm.bing.net/th?id=OIP.gxn_fMRYjgGPp7I9lh81FgHaGS&pid=Api&P=0&w=180&h=154" ,
+            "address":{
+                "street":"Miyapur",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Doctor" ,
+            "mobileno":  "6592046389"
+               
+        },
+        {
+            "id":"5" ,
+            "email":"nop@gmail.com" ,
+            "name": "Sanshika",
+            "profilePic": "https://tse3.mm.bing.net/th?id=OIP.gxn_fMRYjgGPp7I9lh81FgHaGS&pid=Api&P=0&w=180&h=154" ,
+            "address":{
+                "street":"Ameerpet",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Mechanical Enginnerr" ,
+            "mobileno":  "9492046389"
+               
+        },
+        {
+            "id":"6",
+            "email":"qrs@gmail.com" ,
+            "name": "Mili",
+            "profilePic":  "https://tse3.mm.bing.net/th?id=OIP.gxn_fMRYjgGPp7I9lh81FgHaGS&pid=Api&P=0&w=180&h=154",
+            "address":{
+                "street":"Khairtabad",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Software Engineer" ,
+            "mobileno":  "8792046389"
+               
+        },
+        {
+            "id":"7" ,
+            "email":"tuv@gmail.com" ,
+            "name": "Nikkie",
+            "profilePic": "https://tse3.mm.bing.net/th?id=OIP.gxn_fMRYjgGPp7I9lh81FgHaGS&pid=Api&P=0&w=180&h=154" ,
+            "address":{
+                "street":"Amberpet",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Proffessor" ,
+            "mobileno":  "789046389"
+               
+        },
+        {
+            "id":"8" ,
+            "email":"wxy@gmail.com" ,
+            "name": "Avyukth",
+            "profilePic": "https://tse2.mm.bing.net/th?id=OIP.yj2FEJUGeiFdRKmBTOzsbAAAAA&pid=Api&P=0&w=300&h=300" ,
+            "address":{
+                "street":"SR Nagar",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Buisness" ,
+            "mobileno":  "6292046389"
+               
+        },
+        {
+            "id":"9",
+            "email":"xyz@gmail.com" ,
+            "name": "Sahasra",
+            "profilePic": "https://tse3.mm.bing.net/th?id=OIP.gxn_fMRYjgGPp7I9lh81FgHaGS&pid=Api&P=0&w=180&h=154" ,
+            "address":{
+                "street":"Hitech city",
+                "city":"Hyderbad"
+
+            },
+            "profession": "Pharmasict" ,
+            "mobileno":  "9092046389"
+               
+        },
+        {
+            "id":"10",
+            "email":"pqr@gmail.com" ,
+            "name": "Ayansh",
+            "profilePic": "https://tse2.mm.bing.net/th?id=OIP.yj2FEJUGeiFdRKmBTOzsbAAAAA&pid=Api&P=0&w=300&h=300" ,
+            "address":{
+                "street":"Patancheru",
+                "city":"Sangarddy"
+
+            },
+            "profession": "Lawyer" ,
+            "mobileno":  "8792046389"
+               
+        }
+    ]
+}

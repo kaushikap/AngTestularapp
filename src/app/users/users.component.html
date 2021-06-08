@@ -1,55 +1,23 @@
-<table class="table text-white text-center ">
-    <hr>
-    <thead >
-        <tr>
-            <th>ID</th>
-            <th >name</th>
-            <th>Username</th>
-            <th>email</th>
-            <th colspan="4">
-                Address
-                <th colspan="2">
-                    geo
-                    <th>Phone</th>
-                    <th>Website</th>
-                    <th>Name</th>
-                    
-                    </tr>
-           <tr><td colspan="4">
-            <th>street</th>
-            <th>suite</th>
-            <th>city</th>
-            <th>zipcode</th>
-           <th>lat</th>
-            <th>lng</th>
-            <th colspan="5"></th>
+<div class="background">
+    <table class="table text-dark text-center">
+        <thead>
+            <tr>
+    
+                <th class="text-white">ID</th>
+               
             </tr>
-    </thead>
-
-
-    <tbody>
-        <tr *ngFor="let postObj of users">
-
-
-                <td>{{postObj.id}}</td>
-                <td>{{postObj.name}}</td>
-                <td>{{postObj.username}}</td>
-                <td>{{postObj.email}}</td>
-                <td>{{postObj.address.street}}</td>
-                <td>{{postObj.address.suite}}</td>
-                <td>{{postObj.address.city}}</td>
-                <td>{{postObj.address.zipcode}}</td>
-                <td>{{postObj.address.geo.lat}}</td>
-                <td>{{postObj.address.geo.lng}}</td>
-                <td>{{postObj.phone}}</td>
-                <td>{{postObj.website}}</td>
-                <td>{{postObj.company.name}}</td>
-                
-
-        </tr>
-    </tbody>
-</table>
-
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let postObj of users">
+                <td>
+                   <button class="btn btn-sm btn-warning"  (click)="onSelectId(postObj.id)"> {{postObj.id}}</button></td>
+               
+    
+            </tr>
+        </tbody>
+    </table>
+    </div>
 
     
     

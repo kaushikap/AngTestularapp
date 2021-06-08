@@ -12,6 +12,7 @@ export interface Post{
             lat:string,
             lng:string,
         }
+        
     };
     phone:string;
     website:string;
@@ -20,5 +21,8 @@ export interface Post{
       catchPhrase: string,
       bs:string,
     }
+    mobileno:number;
+    profession:string;
+    profilePic:any;
 }
 

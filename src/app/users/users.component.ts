@@ -1,6 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+
 import { DataoneService } from '../dataone.service';
 import { Post } from '../models/post.model';
 
@@ -9,16 +10,15 @@ import { Post } from '../models/post.model';
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })
-export class UsersComponent implements OnInit,OnDestroy {
+export class UsersComponent implements OnInit ,OnDestroy{
 
   mySubscription:Subscription;
 
-  users:Post[]=[];
+  myPosts:Post[]=[];
 
-  //users;
+  users;
   //inject Fakedata service object
-  constructor(private fsObj:DataoneService//,private router:Router
-    ) { }
+  constructor(private fsObj:DataoneService,private router:Router) { }
 
   ngOnInit(): void {
    this.mySubscription= this.fsObj.getPosts().subscribe(
@@ -26,18 +26,21 @@ export class UsersComponent implements OnInit,OnDestroy {
         //assign posts
         this.users=userData;
         console.log(this.users)
-        //console.log("jjjj")
-       // console.log{{}}
        
       },
       err=>{
         console.log("err in getting posts data",err)
       }
+
     )
   }
+
+  onSelectId(id){
+    this.router.navigateByUrl('users/'+id)
+  }
+
   ngOnDestroy(){
     this.mySubscription.unsubscribe();
   }
 }
-
 

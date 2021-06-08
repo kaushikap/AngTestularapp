@@ -20,7 +20,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
 
 
-import { UsersComponent } from './users/users.component'
+import { UsersComponent } from './users/users.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { TvshowsComponent } from './tvshows/tvshows.component';
+import { ShowdetailsComponent } from './showdetails/showdetails.component';
 
 
 @NgModule({
@@ -38,6 +41,10 @@ import { UsersComponent } from './users/users.component'
     PagenotfoundComponent,
     TelevisionsComponent,
     UsersComponent,
+    UserdetailsComponent,
+    TvshowsComponent,
+    ShowdetailsComponent,
+   
     
    
   ],

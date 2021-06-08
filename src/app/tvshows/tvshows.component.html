@@ -1,0 +1,30 @@
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-4">
+<div class="one" *ngFor="let tvObj of tvdata.items">
+   
+    <div class="card" style="width: 20rem;">
+        <img src="{{tvObj.image}}" class="card-img-top"  alt="..."  height="300px">
+        <div class="card-body">
+          <h5 class="card-title">{{tvObj.title}}</h5>
+          <span class="card-text text-warning">
+              <h5>{{tvObj.year}}</h5>
+              <h5>{{tvObj.imDbRating}}</h5>
+
+          </span>
+          <span >
+              <button  class="btn bg-secondary me-5 text-white">favourites
+                <i class="fab fa-gratipay"></i>
+              </button>
+
+              <button class="btn bg-primary text-white" (click)="onSelectId(tvObj.id)" >See more...</button>
+
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+
+
