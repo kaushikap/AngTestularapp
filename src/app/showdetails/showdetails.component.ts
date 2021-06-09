@@ -1,27 +1,30 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { TvshowdataService } from '../tvshowdata.service';
-import { Subscription } from 'rxjs'
+import { DetailsService } from '../details.service';
+
 
 @Component({
   selector: 'app-showdetails',
   templateUrl: './showdetails.component.html',
   styleUrls: ['./showdetails.component.css']
 })
-export class ShowdetailsComponent implements OnInit, OnDestroy {
+export class ShowdetailsComponent implements OnInit {
 
-  tvshowObj;
-  mySubscription:Subscription;
+  detailsObj;
 
-  constructor(private ar:ActivatedRoute,private showsdata:TvshowdataService) { }
+  
+
+  constructor(private ar:ActivatedRoute,private sd:DetailsService) { }
 
   ngOnInit(): void {
-    let id=this.ar.snapshot.params.id;
 
-   this.mySubscription= this.showsdata.getShowsById(id).subscribe(
+    let id=this.ar.snapshot.params.id;
+    console.log(id);
+
+    this.sd.getShowsById(id).subscribe(
       obj=>{
         console.log(obj);
-        this.tvshowObj=obj;
+        this.detailsObj=obj;
         
 
       },
@@ -32,9 +35,8 @@ export class ShowdetailsComponent implements OnInit, OnDestroy {
     )
 
   }
+ 
 
-  ngOnDestroy(){
-    this.mySubscription.unsubscribe();
-  }
+  
 
 }

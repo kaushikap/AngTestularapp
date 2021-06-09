@@ -21,6 +21,7 @@ export class TvshowsComponent implements OnInit, OnDestroy {
         userData=>{
           this.tvdata=userData;
           
+          
         },
         err=>{
           console.log("err is",err);
@@ -29,8 +30,8 @@ export class TvshowsComponent implements OnInit, OnDestroy {
   
   }
  
-  onSelectId(id){
-    this.router.navigateByUrl('showdetails/'+id)
+  onSelectId(id:String){
+    this.router.navigateByUrl('tvshows/'+id)
   }
 
   ngOnDestroy(){
